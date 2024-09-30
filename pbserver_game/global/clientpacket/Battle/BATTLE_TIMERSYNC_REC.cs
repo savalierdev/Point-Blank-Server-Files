@@ -78,7 +78,7 @@ namespace Game.global.clientpacket
 
             if (slot.failLatencyTimes >= ConfigGS.maxRepeatLatency)
             {
-                Logger.error("[" + DateTime.Now.ToString("MM/dd HH:mm:ss") + "] Player '" + p.player_name + "' (Id: " + slot._playerId + ") kicked due to high latency. (" + slot.latency + "/" + ConfigGS.maxBattleLatency + "ms)");
+                Logger.error("[" + DateTime.Now.ToString("MM/dd HH:mm:ss") + "] Player '" + p.player_name + "' (Id: " + slot._playerId + ") kicked due to high latency. (" + slot.latency + "/" + ConfigGS.maxBattleLatency + "ms)"); //YÜKSEK MSLİ OYUNCULARI KİCKLİYOR
                 _client.Close(500);
                 return;
             }
