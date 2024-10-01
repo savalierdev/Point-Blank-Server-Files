@@ -72,7 +72,7 @@ namespace Core
         }
         public static void warning(string text)
         {
-            write(text, ConsoleColor.Yellow);
+            write(text, ConsoleColor.Green);
         }
         public static void error(string text)
         {
